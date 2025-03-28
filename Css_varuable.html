@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        :root{
+            --primary-color:yellow;
+            --secondary-color:green;
+            --font-size:50px;
+        }
+        .box{
+            
+              border: 1px solid steelblue;
+        }
+        h1{
+            color:var( --secondary-color)
+        }
+        h5{
+            background-color: steelblue;
+        }
+        .box p{
+            color:var(--primary-color)
+        }
+        .sidebar{
+            background-color: blueviolet;
+          
+        }
+        .content{
+            background-color: aqua;
+        }
+        .container{
+            display:grid;
+            gap:20px;
+            grid-template-columns: 200px calc(100% - 200px - 20px);
+            grid-template-rows: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hi I am Shakil</h1>
+    <h5>Also commonly known as CSS variable</h5>
+    <div class="box">
+        <h3>I am doing Something</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus mollitia illum, ullam earum vitae quam totam sequi eligendi. Perferendis veritatis sapiente accusamus expedita at ipsum est consequatur recusandae quod aspernatur.</p>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+    </div>
+    
+</body>
+</html>
